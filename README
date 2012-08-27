@@ -56,6 +56,10 @@ BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=MooseX-RoleFor>.
 
+  Known
+    When misapplying a role to an instance (rather than a class), you get
+    not one warning, but two: one for the object, and one for its metaclass.
+
 SEE ALSO
     Moose, Moose::Meta::Role.
 
@@ -65,7 +69,7 @@ AUTHOR
     Toby Inkster <tobyink@cpan.org>.
 
 COPYRIGHT AND LICENCE
-    This software is copyright (c) 2011 by Toby Inkster.
+    This software is copyright (c) 2011-2012 by Toby Inkster.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
