@@ -7,7 +7,7 @@ use utf8;
 BEGIN
 {
 	$MooseX::RoleFor::Meta::Role::Trait::RoleFor::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::RoleFor::Meta::Role::Trait::RoleFor::VERSION   = '0.002';
+	$MooseX::RoleFor::Meta::Role::Trait::RoleFor::VERSION   = '0.003';
 }
 
 use Moose::Role;
@@ -80,7 +80,7 @@ before apply => sub
 		s{\.pm$}{};
 		s{[/\\]}{::}g;
 		$Carp::Internal{$_}-- if /^(?:Class::MOP|Moose|MooseX)\b/
-	}	
+	}
 };
 
 'Yay!';

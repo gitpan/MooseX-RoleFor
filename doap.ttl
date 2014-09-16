@@ -12,7 +12,7 @@
 <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/project>
 	a                    doap:Project;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
-	doap-deps:runtime-requirement [ doap-deps:on "Moose::Exporter"^^doap-deps:CpanId ], [ doap-deps:on "Moose::Role"^^doap-deps:CpanId ], [
+	doap-deps:runtime-requirement [ doap-deps:on "perl 5.010"^^doap-deps:CpanId ], [ doap-deps:on "Moose::Exporter"^^doap-deps:CpanId ], [ doap-deps:on "Moose::Role"^^doap-deps:CpanId ], [
 		doap-deps:on "Moose::Util::TypeConstraints"^^doap-deps:CpanId;
 	], [ doap-deps:on "Carp"^^doap-deps:CpanId ], [ doap-deps:on "Scalar::Util"^^doap-deps:CpanId ], [
 		doap-deps:on "namespace::autoclean"^^doap-deps:CpanId;
@@ -30,7 +30,11 @@
 	];
 	doap:name            "MooseX-RoleFor";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-000_01>, <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-001>, <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-002>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-000_01>, <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-001>, <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-002>, <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-003>;
+	doap:repository      [
+		a doap:GitRepository;
+		doap:browse <https://github.com/tobyink/p5-moosex-rolefor>;
+	];
 	doap:shortdesc       "limit the applicability of a Moose::Role".
 
 <http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-000_01>
@@ -64,4 +68,18 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-RoleFor-0.002.tar.gz>;
 	doap:revision        "0.002"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/v_0-003>
+	a                    doap:Version;
+	dc:identifier        "MooseX-RoleFor-0.003"^^xsd:string;
+	dc:issued            "2014-09-16"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Packaging;
+			rdfs:label "Add repo link.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooseX-RoleFor-0.003.tar.gz>;
+	doap:revision        "0.003"^^xsd:string.
 

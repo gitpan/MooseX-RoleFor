@@ -10,7 +10,7 @@ my $meta = {
                         "TOBYINK <tobyink\@cpan.org>",
                       ],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -28,16 +28,17 @@ my $meta = {
                             "Moose::Role" => 0,
                             "Moose::Util::TypeConstraints" => 0,
                             "namespace::autoclean" => 0,
+                            "perl" => "5.010",
                             "Scalar::Util" => 0,
                           },
                         },
                         test => { requires => { "Test::More" => 0.61 } },
                       },
   "provides"       => {
-                        "MooseX::RoleFor" => { file => "lib/MooseX/RoleFor.pm", version => 0.002 },
+                        "MooseX::RoleFor" => { file => "lib/MooseX/RoleFor.pm", version => 0.003 },
                         "MooseX::RoleFor::Meta::Role::Trait::RoleFor" => {
                           file => "lib/MooseX/RoleFor/Meta/Role/Trait/RoleFor.pm",
-                          version => 0.002,
+                          version => 0.003,
                         },
                       },
   "release_status" => "stable",
@@ -47,9 +48,14 @@ my $meta = {
                                         },
                         homepage     => "https://metacpan.org/release/MooseX-RoleFor",
                         license      => ["http://dev.perl.org/licenses/"],
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/project",
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-moosex-rolefor.git",
+                                          web  => "https://github.com/tobyink/p5-moosex-rolefor",
+                                        },
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/MooseX-RoleFor/project",
                       },
-  "version"        => 0.002,
+  "version"        => 0.003,
 };
 
 my %dynamic_config;

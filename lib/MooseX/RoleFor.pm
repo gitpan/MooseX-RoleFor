@@ -7,7 +7,7 @@ use utf8;
 BEGIN
 {
 	$MooseX::RoleFor::AUTHORITY = 'cpan:TOBYINK';
-	$MooseX::RoleFor::VERSION   = '0.002';
+	$MooseX::RoleFor::VERSION   = '0.003';
 }
 
 use Moose::Exporter;
